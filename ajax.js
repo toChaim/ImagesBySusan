@@ -35,7 +35,7 @@ $(document).ready(function () {
 
 		// hhttps://stackoverflow.com/questions/18480550/how-to-load-all-the-images-from-one-of-my-folder-into-my-web-page-using-jquery
 
-		var dir = "learnwebcode.github.io/json-example/";
+		var dir = "./img";
 		var fileextension = ".jpg";
 		$.ajax({
 		    //This will retrieve the contents of the folder if the folder is configured as 'browsable'
