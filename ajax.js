@@ -35,19 +35,13 @@ $(document).ready(function () {
 
 		// hhttps://stackoverflow.com/questions/18480550/how-to-load-all-the-images-from-one-of-my-folder-into-my-web-page-using-jquery
 
-		var dir = "./img";
+		var dir = "https://tochaim.github.io/ImagesBySusan/img";
 		var fileextension = ".jpg";
 		$.ajax({
 		    //This will retrieve the contents of the folder if the folder is configured as 'browsable'
 		    url: dir,
 		    success: function (data) {
-		        //List all .jpg file names in the page
-		        $(data).find(
-		        	"a:contains(" + fileextension + ")").each(
-		        	function () {
-		            	var filename = this.href.replace(window.location.host, "").replace("https://", "");
-		            $("body").append("<img src='" + dir + filename + "'>");
-		        });
+		    	console.log(data);
 		    }
 		});
 
