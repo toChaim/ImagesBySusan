@@ -1,6 +1,16 @@
 $(document).ready(function(){
 	console.log("index ready");
 
+	var $dir = $("#dir").on('click', function(){
+		var url = "https://learnwebcode.github.io/json-example";
+		var folderRequest = new XMLHttpRequest();
+		folderRequest.open('GET', url);
+		folderRequest.onload =  function(){
+			console.log(folderRequest.responseText);
+		};
+
+	});
+
 	var pageCounter = 1;
 	var animalContainer = document.getElementById("photos");
 	var btn = document.getElementById("btn");
