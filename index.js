@@ -11,6 +11,8 @@ $(document).ready(function(){
 			console.log(folderRequest.responseText);
 		};
 
+		folderRequest.send();
+
 	});
 
 	var pageCounter = 1;
