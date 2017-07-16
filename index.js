@@ -2,6 +2,8 @@ $(document).ready(function(){
 	console.log("index ready");
 
 	var $dir = $("#dir").on('click', function(){
+		console.log("#dir click");
+
 		var url = "https://learnwebcode.github.io/json-example";
 		var folderRequest = new XMLHttpRequest();
 		folderRequest.open('GET', url);
